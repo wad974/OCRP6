@@ -1,0 +1,54 @@
+/* Importation de la police Roboto depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Application de la police Roboto sur tous les éléments */
+body * {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Couleur gris clair pour les paragraphes */
+p {
+    color: #313332;
+
+}
+
+/* Effet de zoom sur les images avec la classe "hover-effect" */
+.hover-effect img {
+    transition: transform 0.33s ease-in-out;
+    /* Animation uniquement sur "transform" */
+    transform: scale(1);
+    /* État initial */
+}
+
+.hover-effect img:hover {
+    transform: scale(1.05) translateY(-10px);
+    /* Zoom et translation au survol */
+}
+
+/** header **/
+#site-header.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: gray;
+}
+
+li.menu-item a {
+    color: #313332 !important;
+    background-color: gold;
+    text-decoration: none !important;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+li.menu-item a:hover,
+li.menu-item.current-menu-item a {
+
+    background-color: lightblue;
+}
+
+#site-footer {
+    background-color: gray;
+    text-align: center;
+
+}
